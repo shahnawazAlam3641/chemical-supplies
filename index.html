@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Supplies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<div class="nav">
+    <h1>Chemical Supplies</h1>
+
+    <!-- Toolbar -->
+    <div class="toolbar">
+        <button title="Move Up" onclick="moveRowUp()"><i class="fa-solid fa-arrow-up"></i> </button>
+        <button title="Move Down" onclick="moveRowDown()"><i class="fa-solid fa-arrow-down"></i> </button>
+        <button title="Add" onclick="addRow()"><i class="fa-solid fa-plus"></i> </button>
+        <button title="Delete" onclick="deleteSelectedRows()"><i class="fa-solid fa-trash"></i> </button>
+        <button title="Refresh" onclick="refreshTable()"><i class="fa-solid fa-arrows-rotate"></i> </button>
+        <button title="Save" onclick="saveTable()"><i class="fa-regular fa-floppy-disk"></i> </button>
+    </div>
+</div>
+
+<table id="chemicalTable">
+    <thead>
+        <tr>
+            <th><i class="fa-solid fa-check"></i></th> <!-- Added header for the checkbox column -->
+            <th>ID</th>
+            <th>Chemical Name</th>
+            <th>Vendor</th>
+            <th>Density <span class="fade">[g/m<sup>3</sup>]</span></th>
+            <th>Viscosity <span class="fade">[m<sup>2</sup>/s]</span></th>
+            <th>Packaging</th>
+            <th>Pack Size</th>
+            <th>Unit</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Rows will be populated here -->
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
